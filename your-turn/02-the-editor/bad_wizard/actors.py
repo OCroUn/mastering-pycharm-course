@@ -18,6 +18,13 @@ class Creature:
 class Wizard(Creature):
 
     def attack(self, creature):
+        """
+        Attacks the specified creature.
+        :param creature:
+        The creature to battle.
+        :return:
+        bool: True if the wizard is triumphan
+        """
         print("The wizard {} attacks {}!".format(
             self.name, creature.name
         ))
@@ -34,6 +41,9 @@ class Wizard(Creature):
         else:
             print("The wizard has been DEFEATED!!!")
             return False
+
+    def wake_up(self):
+        print("The wizard Gandolf awakens")
 
 
 class SmallAnimal(Creature):
